@@ -1,4 +1,4 @@
-﻿@model DrugShop333.Order
+﻿@model Order
 
 @{
     ViewData["Title"] = "Create";
@@ -26,7 +26,7 @@
                 <select asp-for="PaymentTypeId" class ="form-control" asp-items="ViewBag.PaymentTypeId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
+                <label asp-for="UserId" class="control-label">UserChoose</label>
                 <select asp-for="UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
             </div>
             <div class="form-group">

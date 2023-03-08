@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace DrugShop333;
+namespace DrugShop333.Models;
 
 public partial class DrugShopContext : DbContext
 {

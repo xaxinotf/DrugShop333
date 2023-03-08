@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DrugShop333;
+namespace DrugShop333.Models;
 
 public partial class Order
 {

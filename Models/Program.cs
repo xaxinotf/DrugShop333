@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace DrugShop333
+namespace DrugShop333.Models
 {
     public class Program
     {

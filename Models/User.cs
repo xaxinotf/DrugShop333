@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.Xml;
 
-namespace DrugShop333;
+namespace DrugShop333.Models;
 
 public partial class User
 {
@@ -20,4 +21,11 @@ public partial class User
     public string Homeaddress { get; set; } = null!;
 
     public virtual ICollection<Order> Orders { get; } = new List<Order>();
+    public string DisplayInfo
+    {
+        get => $"Name: {Name} Surname: {Surname} Phone: {Phone} Email: {Email} WorkaAddress: {Workaddress} Homeaddress: {Workaddress} " ; 
+    }
+   
+
+
 }

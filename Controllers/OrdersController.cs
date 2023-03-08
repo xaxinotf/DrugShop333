@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using DrugShop333;
+using DrugShop333.Models;
 
 namespace DrugShop333.Controllers
 {
@@ -51,7 +51,7 @@ namespace DrugShop333.Controllers
         {
             ViewData["PaymentTypeId"] = new SelectList(_context.PaymentTypes, "Id", "Id");
             ViewData["ShipType"] = new SelectList(_context.ShipTypes, "Id", "Id");
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId");
+            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "DisplayInfo");
             return View();
         }
 
